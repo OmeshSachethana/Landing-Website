@@ -1,11 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import Features from "../components/Features.astro";
+import Testimonials from "../components/Testimonials.astro";
+import FAQ from "../components/FAQ.astro";
+import CTA from "../components/CTA.astro";
 ---
 
-<Layout>
-  <div class="min-h-screen flex items-center justify-center bg-slate-900">
-    <h1 class="text-5xl font-extrabold text-cyan-400">
-      Tailwind is Working 🚀
-    </h1>
-  </div>
+<Layout title="Home - Modern Landing Page">
+  <Hero />
+  <Features />
+  <Testimonials />
+  <FAQ />
+  <CTA />
 </Layout>

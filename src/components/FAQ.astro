@@ -1,0 +1,83 @@
+---
+---
+
+<section id="faq" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900/50">
+  <div class="container mx-auto max-w-4xl">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">Frequently Asked Questions</h2>
+      <p class="text-xl text-gray-600 dark:text-gray-400">
+        Find answers to common questions
+      </p>
+    </div>
+    
+    <div class="space-y-6">
+      <!-- FAQ 1 -->
+      <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700">
+        <h3 class="text-xl font-bold mb-4 flex items-center justify-between">
+          <span>Is this template free to use?</span>
+          <button class="faq-toggle text-gray-400 hover:text-gray-600 dark:hover:text-gray-300">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+        </h3>
+        <div class="faq-content hidden">
+          <p class="text-gray-600 dark:text-gray-400">
+            Yes! This landing page template is completely free to use for personal and commercial projects.
+          </p>
+        </div>
+      </div>
+      
+      <!-- FAQ 2 -->
+      <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700">
+        <h3 class="text-xl font-bold mb-4 flex items-center justify-between">
+          <span>Do I need to know Astro to use this?</span>
+          <button class="faq-toggle text-gray-400 hover:text-gray-600 dark:hover:text-gray-300">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+        </h3>
+        <div class="faq-content hidden">
+          <p class="text-gray-600 dark:text-gray-400">
+            Basic knowledge of HTML and CSS (Tailwind) is helpful, but the template is designed to be easy to customize even for beginners.
+          </p>
+        </div>
+      </div>
+      
+      <!-- FAQ 3 -->
+      <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700">
+        <h3 class="text-xl font-bold mb-4 flex items-center justify-between">
+          <span>Can I deploy this to any hosting platform?</span>
+          <button class="faq-toggle text-gray-400 hover:text-gray-600 dark:hover:text-gray-300">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+        </h3>
+        <div class="faq-content hidden">
+          <p class="text-gray-600 dark:text-gray-400">
+            Absolutely! This template can be deployed to Netlify, Vercel, Cloudflare Pages, or any static hosting service.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // FAQ toggle functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const faqToggles = document.querySelectorAll('.faq-toggle');
+    
+    faqToggles.forEach(toggle => {
+      toggle.addEventListener('click', function() {
+        const content = this.parentElement.nextElementSibling;
+        const icon = this.querySelector('svg');
+        
+        content.classList.toggle('hidden');
+        icon.classList.toggle('rotate-180');
+      });
+    });
+  });
+</script>

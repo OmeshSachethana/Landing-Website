@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Privacy Policy">
+  <div class="container mx-auto max-w-4xl py-20 px-4">
+    <h1 class="text-4xl font-bold mb-8">Privacy Policy</h1>
+    
+    <div class="prose dark:prose-invert max-w-none">
+      <p class="text-gray-600 dark:text-gray-400 mb-6">
+        Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+      </p>
+      
+      <h2 class="text-2xl font-bold mt-8 mb-4">1. Information We Collect</h2>
+      <p>We collect information that you provide directly to us, including when you create an account, use our services, or communicate with us.</p>
+      
+      <h2 class="text-2xl font-bold mt-8 mb-4">2. How We Use Your Information</h2>
+      <p>We use the information we collect to provide, maintain, and improve our services, to develop new ones, and to protect our users.</p>
+      
+      <h2 class="text-2xl font-bold mt-8 mb-4">3. Information Sharing</h2>
+      <p>We do not share your personal information with companies, organizations, or individuals outside of our company except in the following cases.</p>
+      
+      <h2 class="text-2xl font-bold mt-8 mb-4">4. Security</h2>
+      <p>We work hard to protect our users from unauthorized access to or unauthorized alteration, disclosure, or destruction of information we hold.</p>
+      
+      <h2 class="text-2xl font-bold mt-8 mb-4">5. Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy, please contact us at privacy@example.com.</p>
+    </div>
+  </div>
+</Layout>
